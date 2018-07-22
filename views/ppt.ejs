@@ -1,0 +1,89 @@
+<% include parts/header %>
+
+    <body>
+      <% include parts/menu_top %>
+
+        <div class="row">
+          <div class="col s12 m8 l8 video_airedu">
+            
+              <div class="page_pdf_display">
+                <div class="has_it_page_1 z-depth-4 my_pdf_page" response="yes"></div><br>
+              </div>
+            <div class="this_pub card-panel"  style="display:none">
+              
+            </div>
+            <div class="info_space"></div>
+
+            <div class="description_media">
+              <p class="description_text blue-text text-darken-2">
+                <%- description %>
+              </p>
+            </div>
+          
+
+            <div class="commentor">
+              <h5 style="text-transform: uppercase"><%= __('comments')%>. <span class="all_comments"></span></h5>
+                <ul class="collection list_com">
+                  <li class="collection-item avatar">
+                    <img src="" alt="" class="circle my_pic_comment" >
+                    <textarea class="this_text_area text_comment"></textarea>
+                    <div class="right option_comment" style="display:none;">
+                      <a class="waves-effect waves-light btn-flat cancel"><%= __('cancel')%></a>
+                      <a class="waves-effect waves-light btn-flat send blue disabled add_comment"><%= __('add_comment')%></a>
+                    </div>
+                  </li>
+                  <div class="divider"></div>
+                </ul>
+
+                <ul class="collection list_com list_comments">
+                 
+                </ul>
+            </div>
+
+          </div>
+          <div class="col s12 m4 l4">
+              
+            <center>
+            <div class="preloader-wrapper big active loader_suggestion">
+              <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+          </center>
+          <div class="suggestion_vid card-panel" style="display:none">
+            <h1 class="pointer_suggestion hide_suggestion"><%= __('suggestion')%> X</h1>
+            <div class="collection"></div>
+          </div>
+        </div>
+          </div>
+        </div>
+
+        <div class="media_data" style="display:none" title="<%- title %>" type="<%- type %>" fileName="<%- hashName %>" views="<%- view %>" autor_id="<%- user_id %>" timestamp="<%- create_at %>" format="<%- format %>" MongoDbFileId="<%- _id %>" delete_confirmation="<%= __('confirm_delete')%>" fatal_error="<%= __('fatal_error')%>" pages="<%- pages %>"></div>
+
+        <div class="loader_page" style="display:none">
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <% include parts/main_menu %>
+      <% include parts/moment %>
+      <% include parts/main_js %>
+      <% include parts/pub %>
+      <% include parts/pdf %>
+      <% include parts/menu %>
+      <% include parts/footer %>

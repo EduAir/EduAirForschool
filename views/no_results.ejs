@@ -1,0 +1,15 @@
+    <% include parts/header %>
+
+
+    <body>
+    	<% include parts/menu_top %>
+      	<div class="container">
+        	<h1><%= title %></h1>
+        
+        	<span class="red-text text-darken-2"><%= __('search_for')%>  </span>
+        	<span class="black-text text-darken-2"><%= search_string %></span>
+      	</div>
+
+      <% include parts/main_js %>
+      <% include parts/pub %>
+      <% include parts/footer %>

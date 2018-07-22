@@ -1,0 +1,191 @@
+//BEGIN SCG USC V500R005C50LOV006 SC0102 AR_TLBS_TLBA_001 Toolbar to support customization of the Toolbar GUIs by rWX216358 Add 04-09-2015
+//éç‘°åš®logoé”›å²€æ´¿éŽºãƒ¥è„Šé‘çƒ˜ç¥¦é–²å¿”å½é–±ï¿½
+//top.tlbs.appName = "001";
+top.tlbs.name = top.tlbs.name||'Toolbar';
+top.tlbs.workspace = 'customize/L_bar/cmrn';
+top.tlbs.config = top.tlbs.config || {};
+top.tlbs.tlbaurl = 'http://' + top.tlbs.tlbaurl;
+top.tlbs.config.l = {
+	i : '{$workspace}/images/content/logo.png',
+	b : '{$workspace}/images/content/logoback.png',
+	c : 37.5
+};
+top.tlbs.config.delclose = true;//çå——å§é—‚î…Ÿå¯œé–½î†¼ç†é’„æ–¤ç´æµ£è·¨æ•¤Aé¨å‹«å§é—‚î…žå§›é‘³ï¿½
+top.tlbs.config.h = { // hide
+	a : 5, // auto:toolbaré‘·î„å§©é—…æ„¯æ£Œéƒå •æ£¿
+	f : 0, // first:æ££æ ¨î‚¼é—…æ„¯æ£Œéƒå •æ£¿
+	o : 2, // opacity:é—å©‡ï¿½é„åº¢æ¤‚é—‚ï¿½
+	opacityDegree:0.55//é—å©‡ï¿½é„åº£æ®‘ç»‹å¬ªå®³
+};
+top.tlbs.config.simplifiedCloseMenu = 0;  //0: Disable, 1: Enable
+top.tlbs.config.SimplifiedCloseMenuOption = 1  //0:close for session, 1: close for day, 2: close for week, 3: close month
+top.tlbs.config.tlb = {eds : {e : '',ea : ''},ets : {e : '',ea : ''},cs : {ea : ''}};
+top.tlbs.config.c = '{$workspace}/images/menu/close_1.png';
+top.tlbs.config.bg = {
+	c : '',
+	l : ''
+};
+/*  p :  æ£°å‹«å§žæžä»‹åŽ¤ç¼ƒî‡€ã€
+ *  0 :  é¢ã„¦åŸ›æ££æ ¨î‚¼éç‘°åš®APPéƒè·ºå§žæžï¿½
+ *  1 :  LOGOçžæ› ãšéƒè·ºå§žæžï¿½
+ *  2 :  æ££æ ¨î‚¼éç‘°åš®APPé”çŠºæµ‡é”›å±¼äº’éšåº£å£é‘ç±„PPé–²å¶†æŸŠé”çŠºæµ‡
+ *  3 :  LOGOçžæ› ãšéƒè·ºå§žæžæ–¤ç´æ££æ ¨î‚¼éç‘°åš®APPé”çŠºæµ‡é”›å±¼äº’éšåº£å£é‘ç±„PPé–²å¶†æŸŠé”çŠºæµ‡
+ *  4 :  æ££æ ¨î‚¼éç‘°åš®LOGOéƒè·ºå§žæžï¿½
+ *  5 :  å§£å¿”î‚¼éç‘°åš®LOGOéƒè·ºå§žæžï¿½
+ **/
+top.language='FR'
+top.tlbs.config.m = [{
+		id : 'm1',
+		l : '{$workspace}/images/menu/more.png',
+		a : '{$workspace}/images/menu/more_1.png', //éç‘°åš®é’å›¨å´²é¨å‹«æµ˜é—ï¿½		d : 1,
+                d : 1,
+		c : [{
+				id : '001',
+				n : 'Conso',
+				l : '{$workspace}/images/content/menu_1.png',
+				u : top.tlbs.tlbaurl+'/tlbagui/traffic_en/html/overview.html?tid='+top.tlbs.tid+'&cid='+top.tlbs.cid+'&language='+top.language+'?vv=5555',
+				t : 0,
+				p : 4
+			}, {
+				id : '002',
+				n : 'Offres',
+				l : '{$workspace}/images/content/menu_2.png',
+				u : top.tlbs.tlbaurl+'/tlbagui/traffic_en/html/fluxRecommandAndDone.html?tid='+top.tlbs.tid+'&cid='+top.tlbs.cid+'&language='+top.language+'?vv=5555',
+				t : 0,
+				p : 2
+			}, {
+				id : '003',
+				n : 'Twitter',
+				l : '{$workspace}/images/content/menu_3.png',
+				u : 'http://www.twitter.com/MTNCAMEROON',
+				t : 1,
+				p : 1
+			}, {
+				id : '004',
+				n : 'Facebook',
+				l : '{$workspace}/images/content/menu_4.png',
+				//æ·‡î†½æ•¼æ¶”å¬ªå¢ é¨åˆªttp://wap.cmread.com/æ¶“è™¹å¹‡é¦ã„¥æ¹´é§ï¿½ç´é¥çŠ±è´Ÿéî‚¤å«„å¨´å¿šîž‡é£ã„¦å¢¦å¯®ï¿½ç¬‰æµœå—•ç®£é“å¶‡ç…­é¨å‹«æ¹´é§ï¿½ç´éœæ¿æ¹ªæ©æ¬Žé‡œé–¾ç‚¬å¸´å¨´å¬­ç˜¯å¨´å¿šîž‡é£ã„©å…˜é™îˆ™äº’éŽµæ’³ç´‘
+				u : 'http://www.facebook.com/MTNCAMEROON',
+				t : 1,
+				p : 1
+			}
+		]
+	},
+	{
+		id : 'm2',
+		l : '{$workspace}/images/menu/close_FR.png?vv=2100',
+		d : 2,
+		closeSty:1,
+		c : [{
+			id : '010',
+			u : top.tlbs.tlbaurl+'/tlbagui/close_en/js/config.js?language='+top.language+'?vv=2100',
+			t : 0,
+			p : 1
+		}]
+	},
+	{
+		id : 'm3',
+		l : '{$workspace}/images/menu/feedback_FR.png',
+		d : 2,
+		input:1, 
+		c : [{
+			id : '009',
+			u : top.tlbs.tlbaurl+'/tlbagui/feedback_en/js/Research.js?language='+top.language+'?vv=2200',
+			t : 0,
+			p : 1
+		}]
+	},
+	{
+		id : 'm4',
+		l : '{$workspace}/images/menu/about_FR.png',
+		d : 2,
+		c : [{
+			id : '008',
+			u : top.tlbs.tlbaurl+'/tlbagui/about_en/js/backFeature_en.js?language='+top.language+'?vv=5555',
+			t : 0,
+			p : 1
+		}]
+	}
+	
+];
+
+top.tlbs.config.buoy = {
+        e : 0, //Enabled by default = 1, disabled by default = 0 
+        a : 10, // Timeout duration to turn transparent
+        t : 300, // Time interval in secs to refresh percent value from server
+        o : 3, // Value of opacity
+        sd : 0, //Automatically dock to a nearest side, 0 - disable[default], 1 - enabled
+		an : 0, //Enable buoy animation, 0 - disable[default], 1 - enabled
+        r : [{ //Array of ranges with different color
+            id : 'r1', //ID
+            e  : 1,//Enabled by default = 1, disabled = 0 
+            l  : 0, //Range: From
+            h  : 50, //Range: Upto
+            c  : '#0B610B',
+            u  : "app:001",
+            iu : undefined//Image URL to show at the center of the buoy 
+        },
+        {
+            id : 'r2', //ID
+            e  : 1,//Enabled by default = 1, disabled = 0 
+            l  : 51, //Range: From
+            h  : 80, //Range: Upto
+            c  : '#FFA500',
+            u  : "app:001",
+            iu : undefined//Image URL to show at the center of the buoy
+        },
+        {
+            id : 'r3', //ID
+            e  : 1,//Enabled by default = 1, disabled = 0 
+            l  : 81, //Range: From
+            h  : 95, //Range: Upto
+            c  : '#FF0000',
+            u  : "app:002",
+            iu : undefined//Image URL to show at the center of the buoy
+        },
+        {
+            id : 'r4', //ID
+            e  : 1,//Enabled by default = 1, disabled = 0 
+            l  : 96, //Range: From
+            h  : 100, //Range: Upto
+            c  : '#8A0808',
+            u  : "app:002",
+            iu : top.tlbs.url +'tlbsgui/baseline/L_bar/buoy/images/fuel.png'//Image URL to show at the center of the buoy
+        }]
+};
+top.tlbs.res = {
+		RES_PLEASE_WAIT:"Veuillez patienter…",
+		RES_PROMPT_ACTION:"Détails",
+		RES_CLOSING_TITLE:"Fermer",
+		RES_CLOSING_CONFIRM:"êtes-vous sûr de vouloir fermer le {$toolbarname}? Si le Toolbal se ferme, il ne sera plus affiché pour toute la journée.",
+		RES_CLOSING_TIME:"Fermer",
+		RES_CLOSING_DAY:"Fermer pour la journée",
+		RES_CLOSING_WEEK:"'Fermer pour la semaine",
+		RES_CLOSING_MONTH:"Fermer pour le mois",
+		RES_CLOSING_CANCEL:"Non",
+		RES_CLOSING_YES:"Oui",
+		RES_BATCHOPEN_TITLE:"{$toolbarname}",
+		RES_BATCHOPEN_USER:"Cher client:",
+		RES_BATCHOPEN_CANCEL:"Fermer",
+		RES_TRAFFIC_TITLE:"Rappel sur le trafic",
+		RES_TRAFFIC_USER:"Cher client:",
+		RES_TRAFFIC_YES:"Détails",
+		RES_SIMPLIFIED_MINIMIZE:"Reduire",
+		RES_SIMPLIFIED_CLOSE:"Fermer",
+		RES_SIMPLIFIED_CONFIRM:"OK",
+		RES_SIMPLIFIED_CANCEL:"Annuler",
+		RES_SIMPLIFIED_PROMPT:"Veuillez confirmer la fermeture:",
+		RES_BATCHOPEN_PACKAGE_RECOMMENDAION:"Recommandation de forfait",
+		RES_BATCHOPEN_CAMPAIGN_PROMO:"Campagne de promotion",
+
+	};
+top.tlbs.UAhight = [/Android 2.3.5.*XT910.*AppleWebKit/i,/Android 2.3.3.*GT-I9000.*AppleWebKit/i];
+top.tlbs.fireFoxUrl = [/kickass.to/i,/thepiratebay.se/i,/instagram.com/i,/apple.com/i,/neobux.com/i,/reddit.com/i,/cnn.com/i,/people.com/i,/odnoklassniki.ru/i];
+top.tlbs.heightUrls = [/mogujie.com/i,/caijing.com.cn/i,/jang.com.pk/i,/goal.com/i,/saharareporters.com/i,/vanguardngr.com/i];
+//å¨´ä¾€å™ºéŒãƒ¨î‡—ç€µç‘°ç°²app
+top.tlbs.config.trafficApp = '001';
+//æ¿‚æ¥…î™éŽºã„¨å´˜ç€µç‘°ç°²App
+top.tlbs.config.recommandApp = '002';
+//END SCG USC V500R005C50LOV006 SC0102_V5R5_2014_AR_TLBS_TLBA_001 Toolbar to support customization of the Toolbar GUIs by rWX216358 Add 04-09-2015
+
+

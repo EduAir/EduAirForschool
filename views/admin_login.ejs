@@ -1,0 +1,50 @@
+    <% include parts/header %>
+
+    <body>
+      <div class="row login_field valign-wrapper blue lighten-1">
+        <div class="col m8 l8 hide-on-small-only">
+          <div class="valign inspire">
+            <%= __('slogan')%>
+          </div>
+        </div>
+        <div class="col s12 m4 l4">
+          <div class="form_login_signup valign">
+            <h4><%= __('connexion')%></h4>
+            <div class="red-text text-darken-2 form_error hide"></div>
+            <form>
+              <input class="form_number" type="text" placeholder="<%= __('number')%>">
+              <input class="form_pass" type="password" placeholder="<%= __('password')%>">
+
+              <a href="#" class="btn blue right admin_ok"><%= __('finish')%></a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row services blue-text text-darken-2">
+        <center>
+          <div class="col s3">
+            <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">school</i></a><br>
+          </div>
+          <div class="col s3">
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">group</i></a><br>
+          </div>
+          <div class="col s3">
+            <a class="btn-floating btn-large waves-effect waves-light orange"><i class="material-icons">call</i></a><br>
+          </div>
+          <div class="col s3">
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">notifications</i></a><br>
+          </div>
+        </center>
+      </div>
+
+
+      <!-- For language notifications -->
+      <div class="notif" no_complet="<%=__('no_complet')%>" fatal_error="<%=__('fatal_error')%>" error_password="<%=__('error_pass')%>"></div>
+     
+     
+      
+       
+      <% include parts/main_js %>
+      <% include parts/pub %>
+      <% include parts/admin_login %>
+      <% include parts/footer %>

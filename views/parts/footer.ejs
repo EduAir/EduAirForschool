@@ -1,0 +1,38 @@
+ 
+<!-- ////////////////////////////////////////Footer////////////////////////////////////////////////////////////////////// -->
+
+
+ <div class="ip_server" ip="<%= ip_server %>" protocol="<%= protocol %>"></div>
+    
+ <div class="show_suggestion" style="display:none;"><a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">arrow_back</i></a></div>
+
+ <div class="language" not_connected="<%= __('user_not_connected')%>" unknow="<%= __('fatal_error')%>"></div>
+
+ <footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+    © 2018 
+    <span class="grey-text text-lighten-4 right">Powered ByBegoo</span>
+    </div>
+  </div>
+ </footer>
+
+
+
+  <!-- Modal Structure -->
+	<div id="modal_edit" class="modal">
+	    <div class="modal-content">
+	    	<span class="ok_icon" style="display:none"><i class="material-icons large">done</i></span> 
+	     	<textarea class="text_to_update"></textarea>
+	    </div>
+	    <div class="modal-footer">
+	      	<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat go_edit_it"><i class="material-icons">done</i></a>
+	      	<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><%= __('cancel')%></a>
+	    </div>
+	</div>
+ <% include menu_top_js %>
+
+ 
+
+ </body>
+  </html>

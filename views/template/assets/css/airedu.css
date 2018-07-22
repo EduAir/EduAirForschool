@@ -1,0 +1,498 @@
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(MaterialIcons-Regular.woff2) format('woff2'),
+       url(MaterialIcons-Regular.woff) format('woff'),
+       url(MaterialIcons-Regular.ttf) format('truetype');
+}
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body{
+  background: #f1f1f1;
+
+  color: #66757f;
+  font-size: 0.9em;
+}
+
+
+/*For the list of results */
+.first_letter{
+	float: left;
+	color: #fff;
+	padding: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-right: 10px;
+	font-size: 2.5em;
+}
+
+.first_pic{
+	float: left;
+  margin-right: 10px;
+  max-height: 70px;
+}
+
+.data_file{
+	font-size: 0.8em;
+}
+
+.description{
+	font-size: 0.8em;
+}
+
+.air{
+  height: 40px;
+}
+.top{
+  margin-top: 10px;
+}
+
+
+
+
+
+/*For the Home page */
+.search_home{
+  width: 80%;
+}
+
+
+.all_card .this_card{
+  display: inline-block;
+  margin: 5px;
+}
+
+.all_card .card .card-content{
+   text-align: left;
+   font-size: 0.9em;
+}
+
+.autor{
+  height: 50px;
+  float: left;
+}
+
+
+
+
+
+
+
+/*For the articles */
+
+.inside_article{
+   margin:10px;
+  text-align: justify;
+  background: #fff;
+  padding: 10px;
+}
+
+
+.inside_article .card{
+  margin-right: 10px;
+}
+
+.inside_article h1,.inside_article h2,.inside_article h3,.inside_article h4,.inside_article h5{
+  font-weight: lighter;
+  color: #1976D2;
+}
+
+
+.inside_article h1{
+  border-bottom: 1px solid #1976D2;
+}
+
+.video_airedu h1{
+  font-size: 2em;
+  margin: 0px;
+}
+
+.suggestion{
+  float: right;
+  width: 40%;
+  padding-left: 20px; 
+  padding-right: 10px; 
+}
+
+.suggestion_mobile{
+  padding: 5px;
+}
+
+.article_option{
+  margin-top: 5px;
+}
+
+.card .nom{
+  font-weight: bold;
+}
+
+.badge_article{
+  margin: 10px
+}
+
+.pixar{
+  height: 48px;
+}
+
+.pixar_com{
+  display: block;
+  padding: 10px;
+}
+
+.all_comment{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.commentor,.description_media{
+  margin: 5px;
+  background: #fff;
+  font-size: 0.8em;
+}
+
+.description_media p{
+ text-align: justify;
+ margin: 10px;
+ padding-bottom: 20px;
+ padding-top: 20px;
+}
+
+
+
+.commentor h5{
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.commentor .send,.commentor .send_com{
+  color: #fff;
+}
+
+.commentor .btn-flat{
+  font-size: 0.8em;
+}
+
+.timestamper{
+  color: #767676;
+}
+
+
+
+
+/* THis is for video */
+#video_box {
+    position:relative;
+}
+#video_overlays {
+    position:absolute;
+    width:90%;
+    background-color:#000000;
+    z-index:300000;
+    bottom:40px;
+    color: #fff;
+    margin-left: 10px;
+    margin-right:10px;
+    opacity: 0.5;
+    border-radius: 2px;
+    font-size: 0.7em;
+    left: 0px;
+}
+
+.this_pub{
+  font-size: 0.8em;
+}
+
+#video_box{
+
+  width: 100%;
+  background: #000000;
+}
+
+video,.img_target{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.audio_field,.audio_field a {
+  color: #fff;
+}
+
+.timer{
+  width: 70%;
+}
+
+
+.video_airedu{
+  text-align: justify;
+  padding: 10px;
+}
+
+.img_pub_vid{
+  height: 50px;
+  float: left;
+  margin-right: 5px;
+}
+
+.reader_pub{
+  margin: 5px;
+}
+
+.close_pub{
+  margin:5px;
+}
+
+
+/* THis is for uploader */
+.uploader{
+  font-size: 0.7em;
+}
+.advice{
+  color: #fff;
+  padding: 10px;
+}
+
+.advice a{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.field_upload{
+  background: #fff;
+}
+
+.field_upload .selector div{
+  margin-bottom: 20px;
+}
+
+.text_import{
+  font-size: 2em;
+}
+
+.text_drop{
+  font-size: 1.3em;
+}
+
+.thumb_pic{
+  height: 100px;
+}
+
+.command_selector{
+  padding: 20px;
+}
+
+.counter,.percent_up{
+  font-weight: bold;
+}
+
+.loader_up input{
+  border:1px solid #2196F3;
+  height: 2rem;
+  width: 70%;
+}
+
+.loader_up textarea{
+  border:1px solid #2196F3;
+  width: 70%;
+}
+
+
+
+/*For user profil*/
+.user_background{
+  background: #000000;
+  padding-left: 10px;
+}
+
+.user_background i{
+  color: #fff;
+}
+
+.user_identity{
+  color: #fff;
+}
+
+.user_pic{
+  display: block;
+  padding-top: 10px;
+}
+
+.contact i{
+  color: #fff;
+}
+
+.contact{
+  margin-right: 10px;
+}
+
+.user_pic img{
+  height: 50px;
+  float: left;
+  margin-right: 5px;
+}
+
+.first_ident{
+  background: #fff;
+  margin-top: 5px;
+}
+
+.last_file{
+  width: 50%;
+  background: #fff;
+}
+
+.last_file img{
+  height: 100px;
+  padding: 10px;
+}
+
+
+
+/*For the login page*/
+
+.form_login_signup{
+  background: #f1f1f1;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form_log_in,.form_next{
+  width: 100%;
+}
+
+.links{
+  line-height: 2em;
+}
+
+.form_login_signup form{
+  margin-bottom: 20px;
+}
+
+.inspire{
+  color: #fff;
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+.form_error{
+  color: #fff;
+}
+.validated{
+  padding-top: 50px;
+}
+
+
+
+
+/*For tag Page*/
+.next_tag{
+  margin-right: 20px;
+  line-height: 2em;
+}
+
+
+
+/*For follow*/
+.desc_follow{
+  width: 70%;
+  text-align: justify;
+}
+
+.follow_list,.abonne{
+  color: #000000;
+}
+
+.abonne,.find_leader_submit{
+  text-transform: none;
+}
+
+
+
+
+/*For notification*/
+.notification_list a{
+  color:  #66757f;
+}
+
+.notification_li{
+  cursor: pointer; 
+}
+
+
+
+
+/*For video call*/
+.field_call{
+  position: relative;
+  background: #000000;
+  margin-top: 10px;
+}
+
+.my_mirror {
+    position:absolute;
+    width:160px;
+    height:100px;
+    z-index:300000;
+    top:10px;
+    right:10px;
+}
+
+.dash_call {
+    position:absolute;
+    z-index:300001;
+    bottom:10px;
+    width: 100%;
+}
+
+.my_mirror video{
+  width: 100%;
+}
+
+
+/*For the forum*/
+.data_question,.last_time,.follow_forum{
+  font-size: 0.8em;
+}
+
+.follow_forum a{
+  text-decoration: underline;
+}
+
+.follow_on img{
+  width: 100%;
+}
+

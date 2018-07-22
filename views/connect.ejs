@@ -1,0 +1,87 @@
+    <% include parts/header %>
+
+    <body>
+      <div class="row login_field valign-wrapper blue lighten-1">
+        <div class="col m8 l8 hide-on-small-only">
+          <div class="valign inspire">
+            <%= __('slogan')%>
+          </div>
+        </div>
+        <div class="col s12 m4 l4">
+          <div class="form_login_signup valign">
+            <h4><%= __('connexion')%></h4>
+            <div class="red-text text-darken-2 form_error hide"></div>
+            <form>
+              <input class="form_name hide" type="text" placeholder="<%= __('full_name')%>">
+              <input class="form_number" type="text" placeholder="<%= __('number')%>">
+              <span class="hide sexe">
+                <input name="sexe" type="radio" id="man" value="man" />
+                <label for="man"><%= __('man')%></label>
+                <input name="sexe" type="radio" id="woman" value="woman" />
+                <label for="woman"><%= __('woman')%></label>
+              </span>
+              
+              <input class="form_pass" type="password" placeholder="<%= __('password')%>">
+              <input class="form_pass_conf hide" type="password" placeholder="<%= __('password_conf')%>">
+              <center>
+                <p class="form_accept hide">
+                  <input type="checkbox" id="advised" />
+                  <label for="advised"></label><a href="/term_and_condition" target="_blank"><%= __('advised')%></a>
+                </p>
+                <a class="waves-effect waves-light btn blue form_back hide"><i class="material-icons">chevron_left</i></a>
+                <a class="waves-effect waves-light btn blue form_next disabled hide"><%= __('next')%></a>
+                <a class="waves-effect waves-light btn blue form_log_in"><%= __('login')%></a>
+                <a class="waves-effect waves-light btn blue form_sign_up hide"><%= __('finish')%></a>
+              </center>
+            </form>
+            <span class="links">
+                <a href="#" class="ooh_login hide"><%= __('login')%></a>
+                <a href="#" class="form_forgot_pass"><%= __('forgot_password')%></a><br>
+                <a href="#" class="create_account"><%= __('create_account')%></a><br>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row services blue-text text-darken-2">
+        <center>
+          <div class="col s3">
+            <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">school</i></a><br>
+          </div>
+          <div class="col s3">
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">group</i></a><br>
+          </div>
+          <div class="col s3">
+            <a class="btn-floating btn-large waves-effect waves-light orange"><i class="material-icons">call</i></a><br>
+          </div>
+          <div class="col s3">
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">notifications</i></a><br>
+          </div>
+        </center>
+      </div>
+
+      <!-- Modal Structure -->
+      <div id="modal_form" class="modal">
+        <div class="modal-content">
+          <form>
+            <p>
+              <input type="checkbox" id="noted" />
+              <label for="noted"><%= __('noted_password')%></label>
+            </p>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat ok_done"><%= __('ok_done')%></a>
+        </div>
+      </div>
+
+
+      <!-- For language notifications -->
+      <div class="notif" no_complet="<%=__('no_complet')%>" no_accepted="<%=__('no_accepted')%>" error_password="<%=__('error_pass')%>"></div>
+     
+     
+      
+       
+      <% include parts/main_js %>
+      <% include parts/pub %>
+      <% include parts/login %>
+      <% include parts/footer %>

@@ -1,0 +1,84 @@
+  <% include parts/header %>
+
+    <body>
+      <% include parts/menu_top %>
+      <div class="container uploader">
+        <div class="blue lighten-2 advice">
+           <%=__('police')%>. <a href="/term_and_condition"><%=__('learn_more')%></a>
+        </div>
+        <div class="field_upload" >
+          <center> <div class="card-panel blue lighten-2 white-text text-darken-2 statu_upload" style="display:none;"></div></center>
+         
+          
+            <div class="selector row click_to_uplaod">
+              <center>
+                <div class="col s12"> <a class="icon_publish" href="#"><i class="valign large material-icons">publish</i></a></div>
+                <div class="col s12 text_import"><%=__('import_file')%></div>
+                <div class="col s12">
+                  <div class="chip">Video .mp4</div>
+                  <div class="chip">Photo</div>
+                  <div class="chip">PDF</div>
+                  <div class="chip">Word</div>
+                  <div class="chip">PowerPoint</div>
+                </div>
+
+                <div class="col s12">
+                  <a class="waves-effect waves-light btn blue" href="/upload_bulk"><i class="material-icons left">backup</i><%=__('many_up')%></a>
+                </div>
+
+              </center>
+            </div>
+         
+          
+          <div class="command_selector row" style="display:none;">
+            <div class="hide-on-small-only col m4 l4">
+
+              <span class="this_statu_upload">
+                <img class="thumb_pic" src="assets/img/no_pic.jpg">
+              </span>
+              
+              <div class="state_upload"><%=__('publishing')%>...
+                <div class="progress">
+                  <div class="indeterminate"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col m8 l8">
+              <div class="loader_up">
+                <span class="div_up truncate"><span class="percent_up"><div></div></span>&nbsp;<span class="up_title"></span></span>
+                <div class="progress">
+                    <div class="determinate total_progress" style="width: 0%"></div>
+                </div>
+  
+                <div>
+                    <a class="waves-effect right waves-light btn blue publish" style="display:none;"><%=__('publish')%></a>
+                    <a class="waves-effect right waves-teal btn-flat cancel_publish" id="cancel"><%=__('cancel')%></a>
+                </div>
+
+                
+
+                <input class="file_title file_input" type="text" value="" placeholder="Title" required>
+                <textarea class="file_desc file_input" placeholder="Description"></textarea>
+                <input class="file_tag file_input" type="text" value="" placeholder="Tags Exemple: histoire,cuisine,couture,equation,html...">
+
+              </div>
+            </div>
+          </div>
+          <input type="file" class="filer" name="filer" style="display:none;">
+        </div>
+      </div>
+
+       <!-- For language notifications -->
+      <div class="notif" File_type_Not_allowed="<%=__('File_type_Not_allowed')%>" upload_processing="<%=__('upload_processing')%>" no_complet="<%=__('no_complet')%>" no_accepted="<%=__('no_accepted')%>" error_password="<%=__('error_pass')%>" file_ready="<%=__('file_ready')%>"  file_here="<%=__('file_here')%>"></div>
+     
+     
+      
+      
+      
+      <% include parts/main_menu %>
+      <% include parts/main_js %>
+      <% include parts/pub %>
+      <% include parts/upload %>
+      <% include parts/menu %>
+      <% include parts/footer %>
+    

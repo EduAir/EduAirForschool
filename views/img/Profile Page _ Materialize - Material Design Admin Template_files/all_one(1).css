@@ -1,0 +1,534 @@
+﻿
+@charset "utf-8";
+.imain *{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.ititle {
+    background-color: #E4E1E1;
+}
+
+.services-tag {
+    border-bottom: 0.05em solid #E6E4E4;
+    margin-top: 0.5em;
+    padding-bottom: 0.25em;
+}
+.services-tag i {
+    font-size: 0.65em;
+    color: #2c2c2c;
+    margin-left: 1.2em;
+}
+
+.tip-icon {
+    background: url("../images/all_one/pop-tap.png") no-repeat scroll 0 top;
+    background-size:contain;
+    height: 0.65em;
+    width: 0.65em;
+    display: inline-block;
+}
+
+.intro-txt {
+    line-height: 0.75em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    padding: 0.2em 0;
+}
+.intro-txt i, .intro-more i {
+    color: #646464;
+    font-size: 0.56em;
+}
+.intro-txt ul {
+    margin-left: 1em;
+line-height: 0.55em;
+margin-top: 0.3em;
+}
+.intro-txt ul i{
+    color: #353131;
+    position: relative;
+}
+.intro-txt ul li {
+    margin-bottom: 0.2em;
+}
+.intro-more {
+    margin-top: 0.5em;
+}
+.circle {
+    background: url("../images/all_one/circle.png") no-repeat scroll 0 top;
+    background-size:contain;
+    height: 0.3em;
+    width: 0.3em;
+    position: absolute;
+    margin-top: 0.3em;
+    /* BEGIN SCG USC V500R005C50LOV006 DTS2015041708614 fix  by rWX216358 Modify 27-4-2015 */
+    margin-left:-0.8em
+    /* END SCG USC V500R005C50LOV006  DTS2015041708614 fix  by rWX216358 Modify 27-4-2015 */
+}
+.tuiBtnDiv {
+ background: none repeat scroll 0px 0px #FDBF0C;
+border-radius: 0.8em;
+cursor: pointer;
+display: inline-block;
+height: 1.5em;
+line-height: 1.5em;
+text-align: center;
+width: 6.4em;
+margin: 1em auto;
+ /* BEGIN SCG USC V500R005C50LOV006 DTS2015042210741 fix  by rWX216358 Modify 4-5-2015 */
+-webkit-box-shadow: 0em .1em 0em #C5BDBD;
+-moz-box-shadow: 0em .1em 0em #C5BDBD;
+-o-box-shadow: 0em .1em 0em #C5BDBD;
+ box-shadow: 0em .1em 0em #C5BDBD;
+  /* END SCG USC V500R005C50LOV006 DTS2015042210741 fix  by rWX216358 Modify 4-5-2015 */
+}
+.tuiBtnDiv1 {
+    background: none repeat scroll 0 0 #98d324;
+    border-radius: 0.2em;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    width: 13em;
+    margin: 2em auto;
+}
+.tuiBtnDiv i {
+    font-size: 0.65em;
+    color: #2C2C2C;
+}
+.tuiBtnDiv1 i {
+    font-size: 0.65em;
+    color: #fff;
+}
+.unOrderTips {
+    background-color: #F4FCFF;
+border: 0.05em solid #CCC;
+border-radius: 0.25em;
+-webkit-box-shadow: 0px 0px 0.2em #999;
+-moz-box-shadow: 0px 0px 0.2em #999;
+-o-box-shadow: 0px 0px 0.2em #999;
+box-shadow: 0px 0px 0.2em #999;
+display: none;
+left: 0.8em;
+position: absolute;
+text-align: center;
+top: 1.2em;
+width: 13em;
+z-index: 1002;
+}
+.unOrderTips i {
+    font-size: 0.675em;
+    font-style: normal;
+}
+.unOrderTips div.tips {
+border-bottom: 0.005em solid #FFF;
+font-weight: normal;
+padding: 1em;
+color: #5A5A5A;
+background-color: #FFF;
+}
+.unOrderTips div.tips i {
+    font-size: 0.7em;
+    line-height: 1.6em;
+}
+.unOrderTips div.btn {
+   background-color: #FFF;
+border-top: 0.005em solid #FFF;
+font-style: normal;
+border-bottom-left-radius: 0.25em;
+border-bottom-right-radius: 0.25em;
+}
+.tuititle {
+background-color: #FFF;
+line-height: 2em;
+border-top-left-radius: 0.25em;
+}
+.tuititle i {
+    color: #000;
+font-size: 0.8em;
+font-style: normal;
+}
+.a-blue-btn {
+ background-color: #FDBF0C;
+border-radius: 0.8em;
+color: #2C2C2C;
+cursor: pointer;
+display: inline-block;
+margin: 0.2em 0.5em;
+padding: 0.3em 1.5em;
+text-align: center;
+ /* BEGIN SCG USC V500R005C50LOV006 DTS2015042210741 fix  by rWX216358 Modify 4-5-2015 */
+-webkit-box-shadow: 0em .1em 0em #C5BDBD;
+-moz-box-shadow: 0em .1em 0em #C5BDBD;
+-o-box-shadow: 0em .1em 0em #C5BDBD;
+ box-shadow: 0em .1em 0em #C5BDBD;
+  /* END SCG USC V500R005C50LOV006 DTS2015042210741 fix  by rWX216358 Modify 4-5-2015 */
+}
+.a-blue-btni {
+  background-color: #FDBF0C;
+border-radius: 0.8EM;
+color: #2C2C2C;
+cursor: pointer;
+display: inline-block;
+margin: 0.2em 0.5em;
+padding: 0.2em 1.5em;
+text-align: center;
+width: 10em;
+ /* BEGIN SCG USC V500R005C50LOV006 DTS2015042210741 fix  by rWX216358 Modify 4-5-2015 */
+-webkit-box-shadow: 0em .1em 0em #C5BDBD;
+-moz-box-shadow: 0em .1em 0em #C5BDBD;
+-o-box-shadow: 0em .1em 0em #C5BDBD;
+ box-shadow: 0em .1em 0em #C5BDBD;
+  /* END SCG USC V500R005C50LOV006 DTS2015042210741 fix  by rWX216358 Modify 4-5-2015 */
+}
+.a-grey-btn {
+background-color: #7A7676;
+border-radius: 0.8em;
+color: #FFF;
+cursor: pointer;
+display: inline-block;
+margin-bottom: 0.5em;
+margin-left: 0.4em;
+padding: 0.3em 1.5em;
+text-align: center;
+ /* BEGIN SCG USC V500R005C50LOV006 DTS2015042210741 fix  by rWX216358 Modify 4-5-2015 */
+-webkit-box-shadow: 0em .1em 0em #C5BDBD;
+-moz-box-shadow: 0em .1em 0em #C5BDBD;
+-o-box-shadow: 0em .1em 0em #C5BDBD;
+ box-shadow: 0em .1em 0em #C5BDBD;
+  /* END SCG USC V500R005C50LOV006 DTS2015042210741 fix  by rWX216358 Modify 4-5-2015 */
+}
+
+.unOrderTips tsclose {
+background: url('../images/all_one/close.png') no-repeat scroll center center / contain transparent;
+height: 1.7em;
+width: 1.7em;
+margin: 0.35em;
+position: absolute;
+right: -0.9em;
+top: -1.1em;
+cursor:pointer;
+}
+
+.divbg i {
+    display: block;
+    font-size: 0.6em;
+}
+.divbg {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 0.05em solid #E5E4DE;
+    line-height: 1.3;
+    margin: 1em;
+    padding: 0.5em 0.4em 0.5em 2.5em;
+    position: relative;
+    width: 10em;
+}
+.research-success {
+    display: block;
+    height: 2.25em;
+    text-align: center;
+    width: 100%;
+}
+.research-success i {
+    font-size: 0.65em;
+}
+
+
+/***用户反馈****/
+.survey-txt textarea {
+    background-color: #fff;
+    border-color: #A4A4A4 #CDCDCD #E8E8E8;
+    border-image: none;
+    border-radius: 0.15em 0.15em 0.15em 0.15em;
+    border-style: solid;
+    border-width: 0.05em;
+    color: #9A9A9A;
+    font-size: 0.5em;
+    height: 10em;
+    padding: 0.25em;
+    margin: 3em 2em 0;
+    width: 26em;
+    resize:none;
+    outline:none;
+}
+.survey-nav textarea {
+    background-color: #FFFFFF;
+    border-color: #A4A4A4 #CDCDCD #E8E8E8;
+    border-image: none;
+    border-radius: 0.15em;
+    border-style: solid;
+    border-width: 0.05em;
+    color: #9A9A9A;
+    font-size: 0.5em;
+    height: 5em;
+    margin: 0 2em 0;
+    padding: 0.25em;
+    resize: none;
+    width: 25em;
+    display:none;
+    outline:none;
+}
+
+.research-send {
+    display: block;
+    text-align: center;
+}
+
+.yw-done-pop {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 0.05em solid #E5E4DE;
+    display: none;
+    line-height: 1.5;
+    margin: 1em;
+    padding: 0.5em 0.4em 0.5em 2.5em;
+    position: relative;
+    width: 10em;
+}
+.yw-done-pop img {
+    left: 1em;
+    position: absolute;
+    top: 0.6em;
+}
+.done_icon {
+    height: 0.65em;
+    width: 0.65em;
+}
+
+#error{
+    font-size: 0.6em;
+    margin-left:1.3em;
+}
+#errorInfo{
+    display: none;
+    color: #FF0000;
+    position: absolute;
+    top:6.7em;
+    left: 1em;
+}
+
+.backInmg {
+    cursor: pointer;
+    display: inline-block;
+    height: 1em;
+    left: 0.2em; 
+    margin-left: 0.2em;
+    position: absolute;
+    top: 0.3em;
+    width: 1em;
+    background: url("../images/all_one/logo.png") no-repeat scroll center center;
+    background-size:contain;
+   
+}
+.closesucc{
+	background: url("../images/all_one/done-icon.png") no-repeat scroll center center;
+    background-size:contain;
+    right: 0;
+}
+.closesucc,.closesucc1{
+    height: 0.7em;
+    left: 1.5em;
+    position: absolute;
+    top: 0.5em;
+    width: 0.7em;
+}
+.closesucc1 {
+	background: url("../images/all_one/done-icon.png") no-repeat scroll center center;
+	background-size:contain;
+}
+.closefail{
+	height: 0.7em;
+    left: 1.5em;
+    position: absolute;
+    top: 0.5em;
+    width: 0.7em;
+    background: url("../images/all_one/fail.png") no-repeat scroll center center;
+    background-size:contain;
+    right: 0;
+}
+.doneicon {
+    height: 0.7em;
+    width: 0.7em;
+    position:absolute;
+    background: url("../images/all_one/error-icon.png") no-repeat scroll center center;
+    background-size:contain;
+}
+.unOrderTips .unTipsClose_touch {
+    height: 1.7em;
+    width: 1.7em;
+    position: absolute;
+    right: -0.6em;
+    top: -0.85em;
+    z-index: 999;
+    cursor: pointer;
+}
+.logoInmg {
+    cursor: pointer;
+    display: inline-block;
+    height: 1.4em;
+    left: 0.2em;
+    margin-left: 0.2em;
+    position: absolute;
+    top: 0.1em;
+    width: 1.4em;
+    background-image: url('../images/all_one/logo_1.png');
+    background-size: contain;
+}
+
+
+
+.languageTips {
+    background-color: #F4FCFF;
+    border: 0.05em solid #CCCCCC;
+    -webkit-border-radius:0.5em;
+	-moz-border-radius:0.5em;
+	border-radius: 0.5em;
+	-webkit-box-shadow: 0 0 0.2em #999999;
+	-moz-box-shadow: 0 0 0.2em #999999;
+	-o-box-shadow: 0 0 0.2em #999999;
+	box-shadow: 0 0 0.2em #999999;
+    display: none;
+    left: 0.8em;
+   /*  overflow: auto; */
+    position: absolute;
+    text-align: center;
+    top: 0.9em;
+    width: 13em;
+    z-index: 1002;
+}
+.languageTips i {
+    font-size: 0.675em;
+    font-style: normal;
+	
+}
+
+.languageTips  .tuititle{
+	-webkit-border-radius:0.5em;
+	-moz-border-radius:0.5em;
+	border-radius: 0.5em;
+}
+.languageTips div.tips {
+    border-bottom: 0.005em solid #FFF;
+    font-weight: normal;
+    padding: 1em;
+    color:#5a5a5a;
+    background-color: #FFF;
+	-webkit-border-radius:0.5em;
+	-moz-border-radius:0.5em;
+	border-radius: 0.5em;
+}
+.languageTips div.tips i {
+    font-size: 0.75em;
+    line-height: 1.6em;
+}
+.languageTips div.btn1 {
+    background-color: #FFF;
+    border-top: 0.005em solid #FFFFFF;
+    font-style: normal;
+	-webkit-border-radius:0.5em;
+	-moz-border-radius:0.5em;
+	border-radius: 0.5em;
+}
+.languageTips tsclose {
+    background: url("../images/all_one/close.png") no-repeat scroll center center;
+    background-size:contain;
+    height: 1.7em;
+    width: 1.7em;
+    margin: 0.35em;
+    position: absolute;
+    right: -0.9em;
+    top: -1.1em;
+    cursor:pointer;
+}
+
+.languageTips .unTipsClose_touch {
+    height: 2em;
+    width: 2em;
+    position: absolute;
+    right: -1em;
+    top: -1em;
+    z-index:999;
+	 
+}
+.backImgLang
+{
+	border-bottom: 0.05em solid #E6E4E4;
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+}
+.tuiBtnBg
+{
+	height:4em;
+	margin-top:-0.3em;
+}
+
+.changeLangsucess{background-color: #F4FCFF;
+border: .05em solid #CCC;
+-webkit-border-radius: .5em;
+-moz-border-radius: .5em;
+border-radius: .5em;
+box-shadow: 0 0 .2em #999;
+display: none;
+left: .8em;
+position: absolute;
+text-align: center;
+top: .9em;
+width: 13em;
+z-index: 1002;}
+.changeLangsucess .tips{
+border-bottom:.005em solid #FFF;font-weight:normal;padding:1em;color:#5a5a5a;background-color:#FFF;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;
+}
+.changeLangsucess .tips i{
+font-size:.75em;line-height:1.6em;
+}
+.changeLangsucess .succbtn{
+background-color:#FFF;border-top:.005em solid #FFF;font-style:normal;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;
+}
+.changeLangsucess .succbtn i{font-size:.675em;font-style:normal;}
+.changeLangfail{
+background-color: #F4FCFF;
+border: .05em solid #CCC;
+-webkit-border-radius: .5em;
+-moz-border-radius: .5em;
+border-radius: .5em;
+box-shadow: 0 0 .2em #999;
+display: none;
+left: .8em;
+position: absolute;
+text-align: center;
+top: .9em;
+width: 13em;
+z-index: 1002;
+}
+.changeLangfail .tips{
+border-bottom:.005em solid #FFF;font-weight:normal;padding:1em;color:#5a5a5a;background-color:#FFF;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;
+}
+.changeLangfail .tips i{
+font-size:.75em;line-height:1.6em;
+}
+.changeLangfail .succbtn{
+background-color:#FFF;border-top:.005em solid #FFF;font-style:normal;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;
+}
+.changeLangfail .succbtn i{font-size:.675em;font-style:normal;}
+.confirm_ok {
+  background-color: #FDBF0C;
+border-radius: 0.8em;
+color: #2C2C2C;
+cursor: pointer;
+display: inline-block;
+margin-bottom: 0.5em;
+margin-left: 0.4em;
+padding: 0.3em 1.5em;
+text-align: center;
+-webkit-box-shadow: 0em .1em 0em #C5BDBD;
+-moz-box-shadow: 0em .1em 0em #C5BDBD;
+-o-box-shadow: 0em .1em 0em #C5BDBD;
+ box-shadow: 0em .1em 0em #C5BDBD;
+
+}
+.confirm_alert
+{
+
+	z-index: 1002;
+	position: absolute;
+	width: 15em;
+	height: 4em;
+	bottom: 0em;
+}

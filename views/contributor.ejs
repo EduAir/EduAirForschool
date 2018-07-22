@@ -1,0 +1,105 @@
+    <% include parts/header %>
+
+    <body>
+      <% include parts/menu_top %>
+      
+       <div class="container user_page_channel">
+        <div class="marketing_account">
+          <img src="assets/img/air.png" class="img_user_pic">
+          <div class="marketing_contact rigth">
+            <div class="tel_user contact_me"> <img src="assets/img/air.png" class="mini_pic_user"> www.eduair.org</div>
+            <div class="tel_logo contact_me"><i class="material-icons left">public</i></div>
+          </div>
+        </div>
+        <div class="account_info card-panel">
+          <div class="row">
+            <div class="col s12 m6 l6">
+              <h1><%= __('admin')%></h1>
+            </div>
+            <div class="col s12 m6 l6">
+              <!-- <div class="right">
+                <i class="material-icons left">done</i><span class="new badge blue" data-badge-caption="Abonné"></span>
+                <span class="new badge blue" data-badge-caption="1726"></span>
+              </div>  -->
+            </div>
+          </div>
+
+
+          <ul class="tabs row">
+            <!-- <li class="tab col s4 m3 l3 _user"><a href="#test1">Accueil</a></li> -->
+            <li class="tab col s4 m3 l3 _user"><a class="active" href="#tab_recent"><%= __('recent')%></a></li>
+            <li class="tab col s4 m3 l3 _user"><a href="#tab_popular"><%= __('popular')%></a></li>
+            <li class="tab col m3 l3 hide-on-small-only search_li">
+              <a href="#test3" class="search_on_media_user"><i class="material-icons left">search</i></a>
+              <div id="search-box-user" class="user_input_search"  style="display:none;">
+                <form id='search-form-user'>
+                  <input id='search-text-user' name='q' type='text' placeholder="search" />
+                  <button id='search-button-user'>                     
+                    <span> <center> <i class="material-icons left">close</i></center></span>
+                  </button>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="tab_recent" class="card-panel col s12">
+          <div class="progress this_list_progress"><div class="indeterminate"></div></div>
+          <table class="bordered this_list_file">
+            <thead>
+              <tr>
+                <th><%= __('file')%></th>
+                <th><%= __('view')%></th>
+                <th><%= __('delete')%></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <div id="tab_popular" class="card-panel col s12">
+          <div class="progress this_list_progress"><div class="indeterminate"></div></div>
+          <table class="bordered this_list_file">
+            <thead>
+              <tr>
+                <th><%= __('file')%></th>
+                <th><%= __('view')%></th>
+                <th><%= __('delete')%></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="card-panel promo">
+          <div class="row">
+            <div class="col s12 m6 l4 my_favorite">
+              <video class="my_favorite_video" poster="img/poster.png" controls left autoplay loop muted >
+                <source src="img/video.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col s12 m6 l6 desc_promo">
+              <h1>Promotion</h1>
+              <div class="title blue-text text-darken-2 truncate">Bellow to generate a number to send to your corre dhhdh</div>
+              <span class="red-text text-darken-2 truncate description"> Payclass truncate to the tag which  ss truncate to the tag which conta ss truncatjdjjddhhd dhhddgd dggd gdgd </span> 
+              <div><span class="new badge blue" data-badge-caption="3:23"></span></div>
+              <div class="black-text text-darken-2 data_file"><span class="views"><span class="number">30M</span>&nbsp;<span class="view_lang">Views</span></span>&nbsp;.&nbsp;<span class="dateTime">Il y'a 59 minutes</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+      </div>
+
+      <div class="user_note" no_file="<%= __('no_file')%>" confirm_delete_file="<%= __('confirm_delete_file')%>"></div>
+     
+     
+      
+      <% include parts/main_menu %>
+      <% include parts/main_js %>
+      <% include parts/pub %>
+      <% include parts/user %>
+      <% include parts/menu %>
+      <% include parts/footer %>

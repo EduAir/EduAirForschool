@@ -1,0 +1,304 @@
+@charset "UTF-8";
+.tlbs {
+	text-align:left;
+	font-size:20px;
+	display:block;
+	width:2.5em; height:3.25em;
+	right:0; bottom:0;
+	position:fixed;
+	overflow:visible;
+	z-index:2147483647; /*用火狐查看元素不宜设置为最顶层:2147483647*/
+	left:initial;
+}
+    /* BEGIN SCG USC V500R005C50LOV006 DTS2015042303481 fix  by rWX216358 Modify 27-10-2014 */
+.tlbs *{
+	text-transform:none;
+
+}
+    /* END SCG USC V500R005C50LOV006 DTS2015042303481 fix  by rWX216358 Modify 27-10-2014 */
+.ts-logo {
+    background: none no-repeat scroll right center / contain rgba(0, 0, 0, 0);
+    bottom: 0;
+    height: 2.8em;
+    right: 0;
+    width: 3.2em;
+    z-index: 20;
+}
+/** 内容 **/
+.ts-content {
+	width:100%; height:2.8em;
+	left:0; bottom:0;
+	background:url("../images/layout/content_bg_1.png") repeat-x scroll 0 0 #ededed;
+	background-size:contain;
+	display:none;
+	box-shadow: 0 0 0.3em #999999;
+}
+.ts-menu {
+    bottom: 2.79em;
+    display: none;
+    height: auto;
+    left: 0;
+    width: 2.41em;
+    z-index:100000;
+	-webkit-transform:translateZ(0);
+}
+.ts-content .ts-box {
+	display:inline-block; position:relative;
+	width:2.65em; height:4.8em;
+	vertical-align:top;
+
+}
+.ts-selected{
+	background:url("../images/layout/active.png") no-repeat;
+	background-size:cover;
+}
+.ts-iconbox .ts-item {
+	width:1.7em; height:1.7em;
+	position:absolute; left:0.45em; top:0.25em;
+}
+
+.ts-content .ts-menubox {
+	width:2.8em; padding:0;
+	vertical-align:top;
+	z-index:10;
+}
+
+.ts-content .ts-curr {
+	display:none;
+	position:absolute; left:0; top:0;
+	width:90%; height:0.25em;
+	  /* BEGIN SCG USC V500R005C50LOV006 DTS2015042203846 fix  by rWX216358 Modify 27-10-2014 */
+	/*background:url("../images/layout/arrow_1.png") no-repeat scroll center center transparent;*/
+	background: none;
+	  /* END SCG USC V500R005C50LOV006 DTS2015042203846 fix  by rWX216358 Modify 27-10-2014 */
+	background-size:contain;
+}
+
+.ts-content .ts-icon .ts-text {
+	display: block;
+	font-size:0.6em;
+	text-align:center;
+	margin-top:3.2em;
+	color:#374146;
+	line-height: 1.5em;
+}
+.ts-menu .ts-layout .ts-text {
+	/**display:none;**/
+	font-size:0.7em;
+	text-align:center;
+}
+.ts-menu .ts-layout .ts-text .ts-i {
+   color:white;
+}
+.tlbs .ts-i {
+    color: #000;
+    display: inline;
+    font-style: normal;
+    font-weight:normal;
+}
+
+/** 菜单区域 */
+.ts-menu .ts-layout {
+	position:absolute; bottom:0;
+	width:100%;
+	/**background-color:#0086d1;
+	opacity: 0.97;**/
+}
+.ts-menu .ts-box {
+	display:block;
+	height:2.4em;
+}
+/**.ts-menu .ts-menu-close .ts-item{
+	margin-top:0.6em;
+}**/
+.ts-menu .ts-item {
+	float:left;
+	width:100%; 
+	height:100%;
+	background:none no-repeat scroll left center transparent;
+	background-size:contain;
+	/**margin-left: 0.85em;**/
+    
+}
+
+.tlbs .ts-cancel .ts-i {
+	color:#9B9B9B;
+}
+.tlbs .ts-yes {
+	border-bottom-color:#638F0E;
+	background:#88BF1C;
+}
+.tlbs .ts-yes .ts-i {
+	color:#FFFFFF;
+}
+.tlbs .scroll{
+	height:15em;
+	width:80%;
+	overflow:scroll;
+	margin:1.5em;
+	z-index:100000;
+	
+}
+.scrollText{
+	height:20000em;
+}
+
+/******************批开提醒�?************************/
+.ts-batchopen .ts-layout .ts-user .ts-i {
+	font-weight:bold;
+	color:#000;
+}
+.ts-batchopen .ts-layout .ts-i {
+    font-size: 0.6em;
+	color:#000;
+}
+.ts-batchopen .ts-box {
+	border: 0.15em solid #FDBF0C;
+	background-color:#FDBF0C;
+}
+.ts-batchopen .ts-box .ts-title .ts-i {
+	color:#fff;
+	font-size:0.8em;
+}
+
+.ts-prompt .ts-text .ts-i {
+	color:#000;
+}
+
+.ts-prompt .ts-action, .ts-prompt .ts-action .ts-i{
+	color:#FF8A00;
+}
+
+.ts-prompt .ts-info {
+    float: left;
+    left: 2.5em;
+    line-height: 0.65em;
+    padding: 0.4em 0;
+    position: absolute;
+    right: 2.7em;
+    word-wrap: break-word;
+    width: auto;
+}
+.scroll-left-arrow {
+	background-image: url("../images/layout/arrow_left.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 2.7em;
+	height: 2.7em;
+	left: 1.8em;
+	opacity: 0.5;
+	position: absolute;
+	display: none;
+	z-index: 999999999999999999;
+}
+
+.scroll-right-arrow {
+	background-image: url("../images/layout/arrow_right.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 2.7em;
+	height: 2.7em;
+	opacity: 0.5;
+	position: absolute;
+	right: 1.1em;
+	display: none;
+}
+.ts-animatedprompt{
+	width:100%;
+	height:100%;
+	background-color:#ff7a03;
+	text-align:center
+}
+
+.ts-animatedprompt .ts-text .ts-i{
+	font-size:0.85em;
+	color:#ffffff;
+	}
+.ts-animatedprompt .ts-info{
+	float:left;
+	left:2.5em;
+	line-height:1em;
+	padding:.4em 0;
+	position:absolute;
+	right:2.7em;
+	word-wrap:break-word;
+	width:auto;
+}
+.ts-animatedprompt {display: none;}
+
+.ts-dialog .ts-flowlogo, .ts-flow .ts-flowlogo, .ts-batchopen .ts-flowlogo  {
+    position: absolute;
+    top: 0.1em;
+    left: 0.2em;
+    /*background: url('../images/dialoglogo.png') no-repeat scroll center center / contain transparent;*/
+    float: left;
+    height: 1em;
+    width: 1em;
+}
+	  /* BEGIN SCG USC V500R005C50LOV006 DTS2015042203865 fix  by rWX216358 Modify 27-10-2014 */
+.ts-dialog .ts-close, .ts-flow .ts-close {
+  background: url('../images/layout/close.png') no-repeat scroll center center / contain transparent;
+  	  /* END SCG USC V500R005C50LOV006 DTS2015042203865 fix  by rWX216358 Modify 27-10-2014 */
+top: -0.1em;
+right: -1em;
+width: 1.7em;
+height: 1.7em;
+cursor: pointer;
+position: absolute;
+}
+.ts-popup .ts-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0.8em;
+    height: 0.8em;
+    margin: 0.3em;
+    background: url('../images/layout/close.png') no-repeat scroll center center transparent;
+	background-size: contain;
+}
+
+.tlbs .ts-cancel {
+    border-radius: 1em;
+    background: none repeat scroll 0% 0% #FDBF0C;
+    border-bottom-color: #ADA4A4;
+	-webkit-box-shadow: 0em .1em 0em #C5BDBD;
+	-moz-box-shadow: 0em .1em 0em #C5BDBD; 
+	box-shadow: 0em .1em 0em #C5BDBD;
+	background-size:contain;
+}
+	  /* BEGIN SCG USC V500R005C50LOV006 DTS2015042203865 fix  by rWX216358 Modify 27-10-2014 */
+.ts-layout .tp-box {
+	border-radius:0.5em;
+}
+
+.ts-batchopen .ts-close
+{
+	background: url('../images/close.png') no-repeat scroll center center / contain transparent;
+	background-size:contain;
+	height: 2em;
+	width: 2em;
+	position: absolute;
+	right: -1em;
+	top: 0em;
+}
+	  /* END SCG USC V500R005C50LOV006 DTS2015042203865 fix  by rWX216358 Modify 27-10-2014 */
+
+
+/** BEGIN SCG USC V500R005C50LOV006 C50LOV006-30 by rWX216358 Add 13-04-2015 **/
+.ts-iconbox .ts-scroll {
+padding: 0 2em 0 2.5em;
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+overflow: hidden;
+}
+/** END SCG USC V500R005C50LOV006 C50LOV006-30 by rWX216358 Add 13-04-2015 **/
+/** BEGIN SCG USC V500R005C50LOV006 DTS2015052610495 nWX240611 Add 27-05-2015 **/
+.ts-plugins {
+	display:none;
+	position:absolute;
+	top:5%; left:0; width:100%; height:100%;
+	z-index:1000;
+}
+/** BEGIN SCG USC V500R005C50LOV006 DTS2015052610495  nWX240611 Add 27-05-2015 **/

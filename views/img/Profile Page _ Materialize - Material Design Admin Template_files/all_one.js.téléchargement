@@ -1,0 +1,350 @@
+//BEGIN SCG USC V500R005C50LOV006 AR_TLBS_TLBA_001  Toolbar to support customization of the Toolbar GUI by rWX216358 Add 07-04-2015
+var timeOutError;
+var timeOutWait;
+top.tlbs.showResult = function (num){
+		clearTimeout(timeOutError);
+		clearTimeout(timeOutWait);
+	   if(num == 0){
+		   //隐藏提交失败信息
+		   $("#errorInfo").css("display","none");
+			$("#researchRes").show();
+			$(".survey-txt").hide();
+			$(".survey-btn-box").hide();
+			$("#researchResImg").show()
+			$("#sendButton").removeClass("disabled");
+		    $("#sendButton").css("background-color","#FDBF0C");
+		    $("#ideaContent").val(feedback.FEEDBACK_OPINION);
+		    $(".ts-textarea",top.document).val(feedback.FEEDBACK_OPINION);
+		    var UA= navigator.userAgent; 
+			var IOSQQ = /iPhone.*OS 7_0.*AppleWebKit.*MQQBrowser/i;
+			var CHROM = /iPhone.*OS 7_0.*AppleWebKit.*CriOS/i;
+			var ViVOMobile = /Android.*vivo S9.*AppleWebKit.*Version.*4.0 Mobile/i;
+			var ViVOOupeng = /Android.*vivo S9.*AppleWebKit.*Version.*4.0 Oupeng/i;
+			if(IOSQQ.test(UA) || CHROM.test(UA)){
+				$(".ts-textarea",top.document).css("display","none");
+			};
+			 if(ViVOMobile.test(UA) || ViVOOupeng.test(UA)){
+				 $(".ts-textarea",top.document).css("display","none");
+			 }
+	   }else if(num == 1){
+	   		var UA= navigator.userAgent; 
+			var IOSQQ = /iPhone.*OS 7_0.*AppleWebKit.*MQQBrowser/i;
+			var CHROM = /iPhone.*OS 7_0.*AppleWebKit.*CriOS/i;
+			if(IOSQQ.test(UA) || CHROM.test(UA)){
+				$(".ts-textarea",top.document).css("display","block");
+			};
+			$("#errorInfo").css("top","7.2em");
+			$("#error").html(feedback.FEEDBACK_EMPTY_ERROR);
+			$("#errorInfo").show();
+			$("#sendButton").removeClass("disabled");
+			$("#sendButton").css("background-color","#FDBF0C");
+	   }
+};
+
+var contentName;
+var UA= navigator.userAgent;
+var IOSQQ = /iPhone.*OS 7_0.*AppleWebKit.*MQQBrowser/i;
+var CHROM = /iPhone.*OS 7_0.*AppleWebKit.*CriOS/i;
+var IOSUC = /iPhone.*OS 7_0.*AppleWebKit.*UCBrowser/i;
+var IOSCHROME = /iPhone.*OS.*AppleWebKit.*CriOS/i;
+var AndroidUA = /Android.*AppleWebKit.*Version/i;
+var AndroidUC = /Android.*AppleWebKit.*Version.*UCBrowser/i;
+var AndroidBaiDu = /Android.*AppleWebKit.*Version.*baidubrowser/i;
+var AndroidQQ = /Android.*AppleWebKit.*Version.*MQQBrowser/i;
+var AndroidOupeng = /Android.*AppleWebKit.*Version.*Oupeng/i;
+var AndroidChrome = /Android.*AppleWebKit.*Chrome/i;
+var Iphone = /iPhone/i;
+var Android  = /Android/i;
+var AndroidXM = /Android.*AppleWebKit.*Version.*MiuiBrowser/i;
+var IPHONEQQ = /iPhone.*OS 7.*AppleWebKit.*MQQBrowser/i;
+var IOSCHROM = /iPhone.*OS 7_1.*AppleWebKit.*CriOS/i;
+var IOSDolphin = /iPhone.*OS 7_0.*AppleWebKit.*10A523/i
+var HMBAIDU = /Android.*HM.*AppleWebKit.*Version.*baidubrowser/i;
+var HUAWEICHROME = /Android.*HuaweiMT1.*AppleWebKit.*Chrome/i;
+var ViVOMobile = /Android.*vivo S9.*AppleWebKit.*Version.*4.0 Mobile/i;
+var ViVOOupeng = /Android.*vivo S9.*AppleWebKit.*Version.*4.0 Oupeng/i;
+// BEGIN: C50LOV002 DTS2014090408736 fixing defect MOD
+var AndroidOpera = /Android.*AppleWebKit.*OPR/i;
+// END: C50LOV002 DTS2014090408736 fixing defect MOD
+$(function(){
+	var lang= new language();
+	language=top.language;
+	lang.loadLanguageJs(this,'feedback',null,language);
+	if(top.document.getElementsByName("viewport")[0]!=undefined){
+		contentName = top.document.getElementsByName("viewport")[0].getAttribute("content");
+	}
+});
+var revise = (function(){
+	var iosChrome = /iPhone.*OS 7_0.*AppleWebKit.*CriOS/i;
+	var setWebsite = function(){
+      if(iosChrome.test(UA) && top.location.href.indexOf("clkmon.com") >= 0){
+			$(".ts-textarea",top.document).addClass("settextarea");
+		}
+	}
+	return{
+		setWebsite:setWebsite
+	}
+	
+})();
+$(function(){
+	//安卓手机在百度浏览器下去掉添加的textarea
+	if(AndroidBaiDu.test(UA)){
+		$(".ts-loading",top.document).children().eq(0).remove();
+	};
+	// DTS2014082103709 fixing the defect
+	// BEGIN: C50LOV002 DTS2014082103746 fixing defect MOD
+	if(AndroidBaiDu.test(UA) || AndroidOupeng.test(UA) || AndroidChrome.test(UA) || AndroidQQ.test(UA)){
+        var href = top.window.location.href;
+        if(/nju.edu/i.test(href) || /sbw.sunbroadband.ph/i.test(href) || /fonlon.org/i.test(href)){
+			$(top.document.body).children(".tlbs").css("bottom","0.5em");
+		}
+        if(/spm.gov.com/i.test(href)){
+			$(top.document.body).children(".tlbs").css("bottom","2em");
+		}
+	};
+	// END: C50LOV002 DTS2014082103746 fixing defect MOD
+	// BEGIN: C50LOV002 DTS2014090408736 fixing defect MOD
+	if(AndroidOpera.test(UA)){
+		var href = top.window.location.href;
+		if(/verisign.com/i.test(href)){
+			$(top.document.body).children(".tlbs").css("bottom","1.2em");
+		}
+	}
+	// END: C50LOV002 DTS2014090408736 fixing defect MOD
+    // DTS2014082103709 fixing the defect end
+    //安卓4.0系统输入框获取焦点时出现2个输入框
+    if(ViVOMobile.test(UA) || ViVOOupeng.test(UA)){
+    	$("#ideaContent").css("display","none"); 
+    	$("#sendButton").css("margin","9em auto");
+    	$("#sendButton").css("border-width","0.1em");
+    	$(".ts-textarea",top.document).on("touchstart",function(){
+    		if($(".ts-textarea",top.document).val()==feedback.FEEDBACK_OPINION){
+    			$(".ts-textarea",top.document).val("");
+    		}; 
+    	});
+    };
+
+	   //苹果系统7.0.2输入法问题解决
+   if(IOSQQ.test(UA) || CHROM.test(UA) || IOSDolphin.test(UA)){
+	   $(".ts-textarea",top.document).val(feedback.FEEDBACK_OPINION); 
+    	$(".ts-textarea",top.document).on("touchstart", function(event) {
+    		top.tlbs.onflousStyle = true;
+    	    event.stopPropagation();
+    	    event.preventDefault();
+    	    $(".ts-textarea",top.document).focus();
+    	    if($(".ts-textarea",top.document).val()==feedback.FEEDBACK_OPINION){
+    			$(".ts-textarea",top.document).val("");
+    		}; 
+    		$("#errorInfo").hide();
+    		
+    	});
+    };
+    revise.setWebsite();
+
+});
+$(function(){
+	$("#sendButton").bind("click",function(){
+		
+		addResearch();
+	if(IOSQQ.test(UA) || CHROM.test(UA)){
+		$(".ts-textarea",top.document).css("display","none");
+		 };
+	});
+	$("#ideaContent").bind("click",function(){
+		if($("#ideaContent").val()==feedback.FEEDBACK_OPINION && $("#checkInput").val()=="0"){
+			$("#ideaContent").val("");
+			$("#checkInput").val("1");
+		}
+		$("#errorInfo").hide();
+	});
+	$("#done").bind("click",function(){
+		$("#researchRes").hide();
+		$(".survey-nav textarea").css("display","none");
+		$(".survey-nav textarea").val("");
+		$(".survey-txt").show();
+		$(".survey-btn-box").show();
+		$("#ideaContent").val(feedback.FEEDBACK_OPINION);
+		$(".ts-textarea",top.document).val(feedback.FEEDBACK_OPINION);
+		var UA= navigator.userAgent; 
+		var IOSQQ = /iPhone.*OS 7_0.*AppleWebKit.*MQQBrowser/i;
+		var CHROM = /iPhone.*OS 7_0.*AppleWebKit.*CriOS/i;
+		var ViVOMobile = /Android.*vivo S9.*AppleWebKit.*Version.*4.0 Mobile/i;
+		var ViVOOupeng = /Android.*vivo S9.*AppleWebKit.*Version.*4.0 Oupeng/i;
+		if(IOSQQ.test(UA) || CHROM.test(UA)){
+			$(".ts-textarea",top.document).css("display","block");
+		};
+		if(ViVOMobile.test(UA) || ViVOOupeng.test(UA)){
+			 $(".ts-textarea",top.document).css("display","block");
+		 }
+		if(/iPhone/i.test(UA) && top.location.href.indexOf("v1.cn") >= 0){
+			top.document.getElementsByName("viewport")[0].setAttribute("content","");
+		};
+		$("#checkInput").val("0");
+	});
+});
+String.prototype.replaceAll=function(b,a){return this.replace(new RegExp(b,"gm"),a)};
+
+function addResearch(){
+	if ($("#sendButton").is(".disabled")) {
+		return;
+	}	
+	$("#errorInfo").css("display","none");
+	if(IOSQQ.test(UA) || CHROM.test(UA) || ViVOMobile.test(UA) || ViVOOupeng.test(UA)){
+	var sendContent=$(".ts-textarea",top.document).val();
+	}else{
+	var sendContent=$("#ideaContent").val();	
+	}
+	if(sendContent.replaceAll(" ","")!=""){
+
+		if(sendContent.length>200){
+			$("#error").html(feedback.FEEDBACK_MAX_LEN_ERROR);
+			$("#errorInfo").css("top","7.2em");
+			$("#errorInfo").show();
+		}
+		else if($("#checkInput").val() == "0")
+		{
+		$("#errorInfo").css("top","7.2em");
+		$("#error").html(feedback.FEEDBACK_EMPTY_ERROR);
+		$("#errorInfo").show();
+		}
+	
+		else{
+			//给提交按钮灰置
+			$("#sendButton").addClass("disabled");
+			$("#sendButton").css("background-color","#FDBF0C");
+			sendContent = encodeURIComponent(sendContent);
+		    var url = top.tlbs.tlbaurl+"/tlbaserver/research/add/?userAdvice="+sendContent+"&time=" + new Date().getTime()+"&callback=top.tlbs.showResult(0)|top.tlbs.showResult(1)";  
+			var script = document.createElement("script");
+			var errorHandler = function() {
+				
+		    	top.tlbs.showResult(1);
+		    	$("#sendButton").removeClass("disabled");
+				$("#sendButton").css("background-color","#FDBF0C");
+		    }
+			timeOutError = setTimeout(errorHandler,30000);
+			//点击提交按钮之后两秒，给出提示信息，请稍等
+			var waitHandler = function(){
+				$("#error").html(feedback.FEEDBACK_WAIT);
+				$("#errorInfo").css("top","7.2em");
+				$("#errorInfo").show();
+			};
+			timeOutWait = setTimeout(waitHandler,2000);
+			
+            script.setAttribute("src", url);  
+            document.getElementsByTagName("head")[0].appendChild(script);  
+		}
+	}else{
+		$("#errorInfo").css("top","7.2em");
+		$("#error").html(feedback.FEEDBACK_EMPTY_ERROR);
+		$("#errorInfo").show();
+	}
+};
+function setStyle(){
+	top.tlbs.onflousStyle = true;
+	var bodySize = $(document.body).css("font-size");
+	$(".vidceStyle").css("font-size",parseInt(bodySize)*0.5+"px");
+	//中国第一视频网单独处理
+	//输入法问题解决方法（不具有viewport属性的网站
+	if(Iphone.test(UA) && top.location.href.indexOf("v1.cn") >= 0){
+		var meta = document.createElement("meta"); 
+	    meta.setAttribute("content","width=device-width; initial-scale=0.26; minimum-scale=0.26; maximum-scale=0.26;user-scalable=no");
+	    meta.setAttribute("name","viewport");
+	    top.document.getElementsByTagName("head")[0].appendChild(meta);
+	}; 
+//    var x;
+//    if(Iphone.test(UA) && top.document.getElementsByName("viewport")[0] != undefined){
+//		//输入法问题解决方法（具有viewport属性的网站）
+//			 if(top.location.href.indexOf("wap.10086.cn")>=0){	
+//				 for(x=0;x<top.document.getElementsByName("viewport")[0].getAttribute("content").split(/[,;]/).length;x++){
+//					 if(top.document.getElementsByName("viewport")[0].getAttribute("content").split(/[,;]/)[x] == "user-scalable=yes"){
+//							top.document.getElementsByName("viewport")[0].setAttribute("content","width=device-width; initial-scale=1; minimum-scale=1; maximum-scale=1;user-scalable=no");					 
+//					 }else{
+//						 top.document.getElementsByName("viewport")[0].setAttribute("content","width=device-width; initial-scale=1.4; minimum-scale=1.0; maximum-scale=1.4;user-scalable=no");	 
+//					 }
+//						
+//				 }
+//			 }else {
+//				  if (contentName == undefined && top.document.getElementsByName("viewport")[0].getAttribute("content")==""){
+//					  top.document.getElementsByName("viewport")[0].setAttribute("content","width=device-width; initial-scale=0.33; minimum-scale=0.33; maximum-scale=0.33;user-scalable=no");	
+//				  }else if(contentName != undefined && IOSCHROME.test(UA) && contentName == "maximum-scale=10"){
+//					  top.document.getElementsByName("viewport")[0].setAttribute("content","width=device-width; initial-scale=0.36; minimum-scale=0.36; maximum-scale=0.36;user-scalable=no");	
+//							 }
+//						 //top.document.getElementsByName("viewport")[0].setAttribute("content","width=device-width; initial-scale=0.36; minimum-scale=0.36; maximum-scale=0.36;user-scalable=no"); 	 
+//					 }
+//			
+//		}
+//
+//	
+//    //输入法问题解决方法（不具有viewport属性的网站）
+//	if(Iphone.test(UA) && top.document.getElementsByName("viewport")[0] == undefined){
+//		if(top.location.href.indexOf("m.zongheng.com")>=0){
+//		var meta = document.createElement("meta"); 
+//	    meta.setAttribute("content","width=device-width; initial-scale=1; minimum-scale=1; maximum-scale=1;user-scalable=no");
+//	    meta.setAttribute("name","viewport");
+//	    top.document.getElementsByTagName("head")[0].appendChild(meta);
+//		}
+//		if(top.location.href.indexOf("3g.mop.com")>=0){
+//			var meta = document.createElement("meta"); 
+//		    meta.setAttribute("content","width=device-width; initial-scale=1; minimum-scale=1; maximum-scale=1;user-scalable=no");
+//		    meta.setAttribute("name","viewport");
+//		    top.document.getElementsByTagName("head")[0].appendChild(meta);
+//		} else {
+//			$("#ideaContent").val("");
+//			var meta = document.createElement("meta"); 
+//		    meta.setAttribute("content","width=device-width; initial-scale=0.33; minimum-scale=0.33; maximum-scale=0.33;user-scalable=no");
+//		    meta.setAttribute("name","viewport");
+//		    top.document.getElementsByTagName("head")[0].appendChild(meta);
+//		
+//		}
+//
+//	}
+//   
+//	
+//	if(Android.test(UA) && top.document.getElementsByName("viewport")[0] == undefined){
+//			if(top.location.href.substring(0,10) == "http://www" && AndroidBaiDu.test(UA)){
+//				var meta = document.createElement("meta"); 
+//			    meta.setAttribute("content","width=device-width; initial-scale=0.36; minimum-scale=0.36; maximum-scale=0.36;user-scalable=no");
+//			    meta.setAttribute("name","viewport");
+//			    top.document.getElementsByTagName("head")[0].appendChild(meta);
+//			};
+//			if(AndroidChrome.test(UA) && top.location.href.substring(0,10) == "http://www"){
+//				if(HUAWEICHROME.test(UA)){
+//					var meta = document.createElement("meta"); 
+//				    meta.setAttribute("content","width=device-width; initial-scale=0.5; minimum-scale=0.5; maximum-scale=0.5;user-scalable=no");
+//				    meta.setAttribute("name","viewport");
+//				    top.document.getElementsByTagName("head")[0].appendChild(meta);	
+//				}else{
+//				var meta = document.createElement("meta"); 
+//			    meta.setAttribute("content","width=device-width; initial-scale=0.36; minimum-scale=0.36; maximum-scale=0.36;user-scalable=no");
+//			    meta.setAttribute("name","viewport");
+//			    top.document.getElementsByTagName("head")[0].appendChild(meta);
+//				}
+//			}
+//			
+//			
+//	};
+  if(HUAWEICHROME.test(UA) && top.document.getElementsByName("viewport")[0] != undefined && top.location.href.substring(0,10) == "http://www"){
+	  top.document.getElementsByName("viewport")[0].setAttribute("content","width=device-width; initial-scale=0.5; minimum-scale=0.5; maximum-scale=0.5;user-scalable=no");	 
+		
+  }
+	//浏览器非移动网站点击输入框提示语不消失
+	if(top.location.href.substring(0,10) == "http://www"){
+		if($("#ideaContent").val()==feedback.FEEDBACK_OPINION){
+		$("#ideaContent").val("");
+		$("#checkInput").val("1");
+		}
+		$("#errorInfo").hide();
+	};
+}
+function delStyle(){
+	top.tlbs.onflousStyle = false;
+	$(".vidceStyle").css("font-size","0.5em");
+	$(".survey-nav textarea").css("display","none");
+};
+
+//END SCG USC V500R005C50LOV006 AR_TLBS_TLBA_001  Toolbar to support customization of the Toolbar GUI by rWX216358 Add 07-04-2015
+
+
+
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="assets/css/airedu.css"  media="screen,projection"/>
+      <meta charset="UTF-8">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    </head>
+
+    <body>
+      <div class="row top">
+        <div class="col s2">
+          <img src="assets/img/air.png" class="air">
+        </div>
+        <div class="col s10 m10 l5">
+          <div id='search-box'>
+            <form action='/search' id='search-form' method='get' target='_top'>
+              <input id='search-text' name='q' type='text'/>
+              <button id='search-button' type='submit'>                     
+                <span> <center> <i class="material-icons left">search</i></center></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container user_page_channel">
+        <div class="marketing_account">
+          <img src="img/yuna.jpg" class="img_user_pic">
+          <div class="marketing_contact rigth">
+            <div class="tel_user contact_me"> <img src="img/yuna.jpg" class="mini_pic_user"> 6 96 23 44 45</div>
+            <div class="tel_logo contact_me"><i class="material-icons left">phone</i></div>
+          </div>
+        </div>
+        <div class="account_info card-panel">
+          <div class="row">
+            <div class="col s12 m6 l6">
+              <h1>Ecole de la Roche</h1>
+            </div>
+            <div class="col s12 m6 l6">
+              <div class="right">
+                <i class="material-icons left">done</i><span class="new badge blue" data-badge-caption="Abonné"></span>
+                <span class="new badge blue" data-badge-caption="1726"></span>
+              </div> 
+            </div>
+          </div>
+
+
+          <ul class="tabs row">
+            <li class="tab col s4 m3 l3 _user"><a href="#test1">Accueil</a></li>
+            <li class="tab col s4 m3 l3 _user"><a class="active" href="#test2">Recents</a></li>
+            <li class="tab col s4 m3 l3 _user"><a href="#test3">Populaires</a></li>
+            <li class="tab col m3 l3 hide-on-small-only search_li">
+              <a href="#test3" class="search_on_media_user"><i class="material-icons left">search</i></a>
+              <div id="search-box-user" class="user_input_search"  style="display:none;">
+                <form id='search-form-user'>
+                  <input id='search-text-user' name='q' type='text'placeholder="search" />
+                  <button id='search-button-user'>                     
+                    <span> <center> <i class="material-icons left">close</i></center></span>
+                  </button>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="card-panel promo">
+          <div class="row">
+            <div class="col s12 m6 l4 my_favorite">
+              <video class="my_favorite_video" poster="img/poster.png" controls left autoplay loop muted >
+                <source src="img/video.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col s12 m6 l6 desc_promo">
+              <h1>Promotion</h1>
+              <div class="title blue-text text-darken-2 truncate">Bellow to generate a number to send to your corre dhhdh</div>
+              <span class="red-text text-darken-2 truncate description"> Payclass truncate to the tag which  ss truncate to the tag which conta ss truncatjdjjddhhd dhhddgd dggd gdgd </span> 
+              <div><span class="new badge blue" data-badge-caption="3:23"></span></div>
+              <div class="black-text text-darken-2 data_file"><span class="views"><span class="number">30M</span>&nbsp;<span class="view_lang">Views</span></span>&nbsp;.&nbsp;<span class="dateTime">Il y'a 59 minutes</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+      </div>
+      
+     
+      
+      
+      
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="assets/js/jquery.js"></script>
+      <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="assets/js/json2.js"></script>
+      <script type="text/javascript" src="assets/js/jstorage.js"></script>
+      <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+      <script type="text/javascript" src="assets/js/jQuery.succinct.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery/autosize.min.js"></script>
+      
+
+
+      <script type="text/javascript" src="assets/js/global.js"></script>
+      <script type="text/javascript" src="assets/js/pub.js"></script>
+      <script type="text/javascript" src="assets/js/user_profile.js"></script>
+    </body>
+  </html>

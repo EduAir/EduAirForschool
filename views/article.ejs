@@ -1,0 +1,65 @@
+<% include parts/header %>
+
+    <body>
+      <% include parts/menu_top %>
+
+      <div class="row">
+        <div class="col s12 m8 l8 field" article="yes">
+          <div class="article_airedu">
+            <div class="option_content right">
+                <!-- <a class="blue-text text-darken-2  waves-effect waves-light"><i class="material-icons">file_download</i></a> -->
+                <!-- <a class="blue-text text-darken-2  waves-effect waves-light"><i class="material-icons">share</i></a> -->
+            </div>
+
+            <div class="inside_article">
+              <%- text %>
+            </div>
+            <div class="commentor">
+              <h5>COMMENTAIRES.1238</h5>
+              <ul class="collection list_com">
+                <li class="collection-item avatar">
+                  <img src="img/yuna.jpg" alt="" class="circle">
+                  <textarea class="text_comment"></textarea>
+                  <div class="right option_comment" style="display:none;">
+                    <a class="waves-effect waves-light btn-flat cancel">Annuler</a>
+                    <a class="waves-effect waves-light btn-flat send blue disabled">Ajouter un commentaire</a>
+                  </div>
+                </li>
+                <div class="divider"></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 l4">
+          <center>
+            <div class="preloader-wrapper big active loader_suggestion">
+              <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+          </center>
+          <div class="suggestion_vid card-panel" style="display:none">
+            <h1 class="pointer_suggestion hide_suggestion">Suggestions X</h1>
+            <div class="collection"></div>
+          </div>
+        </div>
+      </div>
+
+      
+     
+      
+      
+      <% include parts/main_menu %>
+      <% include parts/main_js %>
+      <% include parts/pub %>
+      <% include parts/article %>
+      <% include parts/menu %>
+      <% include parts/footer %>
+
+   

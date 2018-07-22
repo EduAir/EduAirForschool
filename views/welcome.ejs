@@ -1,0 +1,86 @@
+ <% include parts/header %>
+
+    <body>
+      <% include parts/menu_top %>
+
+      <div class="row big_home">
+
+      	<div class="col s12 m9 l9 ">
+
+      		<div class="row all_card">
+
+      		</div>
+      	</div>
+
+
+
+      	<div class="col s12 m3 l3">
+<!-- background-color:rgb(100, 181, 246) -->
+      		<div class="card-panel logo_brand" style="" width="100%">
+      			<img src="assets/img/eduair_logo.png" width="50%" class="right">
+      		</div>
+
+      		<div class="card-panel">
+	      		<center>
+	      			<h5><%= __('disk_space')%></h5>
+	      			<span class="disk_space"><span class="rest"></span> <%= __('free')%> <span class="total"></span> </span>
+	      			<div class="progress">
+	      				<div class="determinate space" style=""></div>
+	  				</div>
+	      		</center>	
+      		</div>
+      	</div>
+      
+      </div>
+
+   
+
+
+
+
+
+
+
+      <span class="to_put_in_center" style="display:none;">
+        <div class="card this_card">
+            <div class="card-image">
+              <img src="assets/img/image.jpg">
+              <span class="card-title">12 Pages</span>
+            </div>
+            <div class="card-content">
+              <div class="title black-text text-darken-2 truncate_title">Bellow to generate a number to send to your corre dhhdh</div>
+              <br>
+              <div class="info_file">
+                 <span class="blue-text text-darken-1 data_file this_name truncate"><i class="material-icons">account_box</i>&nbsp;Stephane</span>
+                 <span class="blue-text text-darken-2 right data_file"><span class="views"><span class="number">30M</span>&nbsp;<span class="view_lang">Views</span></span></span>
+              </div>
+            </div>
+        </div>
+      </span>
+
+      <span class="last_important" style="display:none;">
+         <div class="the_big_one">
+          <div class="card ">
+            <div class="card-image">
+              <img src="assets/img/image.jpg">
+              <span class="card-title">12 Pages</span>
+            </div>
+            <div class="card-content">
+              <div class="title blue-text text-darken-2 truncate_title">Bellow to generate a number to send to your corre dhhdh</div>
+              <div class="info_file">
+                 <div class="red-text text-darken-2 data_file truncate">Stephane</div>
+                 <div class="black-text text-darken-2 data_file"><span class="views"><span class="number">30M</span>&nbsp;<span class="view_lang">Views</span></span>&nbsp;.&nbsp;<span class="dateTime">Il y'a 59 minutes</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </span>
+     
+      
+      
+      <% include parts/main_menu %>
+      <% include parts/main_js %>
+      <% include parts/pub %>
+      <% include parts/home %>
+      <% include parts/menu %>
+      <% include parts/footer %>

@@ -1,0 +1,64 @@
+  <% include parts/header %>
+
+    <body>
+      <% include parts/menu_top %>
+     
+      <div class="container">
+        <div class="menu_search">
+          <ul class="tabs">
+            <li class="tab col s6"><a href="#wikipedia" already_search="no" start="0" end="20" class="library library_wikipedia active black-text text-darken-2">Wikipedia</a></li>
+            <li class="tab col s6"><a href="#document" already_search="no" start="0" end="20" class="library library_document black-text text-darken-2">Document</a></li>
+            <li class="tab col s6"><a href="#audio_video" already_search="no" start="0" end="20" class="library library_audio_video black-text text-darken-2">Video</a></li>
+            <li class="tab col s6"><a href="#image" already_search="no" start="0" end="20" class="library library_image black-text text-darken-2">Image</a></li>
+          </ul>
+        </div>
+        <div class="divider"></div>
+
+        <div class="row">
+          <div class="col s12 m6 l6 list_media">
+
+            <div class="spell_checking card-panel" style="display:none;">
+              <%=__('spellcheck')%>: <span class="good_spell blue-text text-darken-2"><a href="">yes ceci est la balle</a> </span>
+            </div>
+
+            <div class="suggest_image card-panel" style="display:none;">
+              <ul class="container row"> 
+                <h1><%=__('image_for')%> <span class="search_image_result"></span> <a class="more_image" href="#image"> ...<%=__('more_image')%> </a></h1>
+                <center>
+                  <li class="col s3"> <a href="#"> <img src="img/image.jpg" class="responsive-img"> </a> </li>
+                  <li class="col s3"> <a href="#"> <img src="img/image.jpg" class="responsive-img"> </a> </li>
+                  <li class="col s3"> <a href="#"> <img src="img/image.jpg" class="responsive-img"> </a> </li>
+                  <li class="col s3"> <a href="#"> <img src="img/image.jpg" class="responsive-img"> </a> </li>
+                </center>
+              </ul>
+            </div>
+
+            <div id="wikipedia" class="body this_wikipedia col s12 card-panel"><center><img src="assets/img/loading.gif"></center></div>
+            <div id="document" class="body this_document col s12 card-panel"><center><img src="assets/img/loading.gif"></center></div>
+            <div id="audio_video" class="body this_audio_video col s12 card-panel"><center><img src="assets/img/loading.gif"></center></div>
+            <div id="image" class="body this_image col s12 card-panel"><center><img src="assets/img/loading.gif"></center></div>
+            <center><a class="btn-floating btn-large waves-effect waves-light blue plus"><i class="material-icons">add</i></a></center>
+            <div class="progress my_loader" style="display:none"><div class="indeterminate"></div></div>
+
+          </div>
+          <div class="col s12 m6 l6 goodies hide-on-small-only">
+            <!-- <div class="card-panel">
+              <video class="test_video" src="assets/img/video.mp4" poster="img/poster.png" class="responsive-video" controls loop muted autoplay></video>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="search_string" string="<%= string %>"></div>
+     
+     
+      
+      
+      <% include parts/moment %>
+      <% include parts/main_menu %>
+      <% include parts/main_js %>
+      <% include parts/pub %>
+      <% include parts/list %>
+      <% include parts/menu %>
+      <% include parts/footer %>
+    

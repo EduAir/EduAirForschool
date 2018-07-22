@@ -1,0 +1,38 @@
+ <% include parts/header %>
+
+    <body>
+
+      <div class="container">
+
+        <div class="overlay">
+          <i class="fa fa-refresh fa-spin"></i>
+        </div>
+
+        <div class="card-panel">
+          <div class="input-field">
+            <select class="icons" id="schooler">
+              <option value="nan" disabled selected><%= __('user_choose_profil')%></option>
+            </select>
+          </div>
+
+          <p class="type_of_students" style="display:none">
+           
+          </p>
+
+          <div class="input-field all_school" style="display:none">
+            <select class="icons" id="list_school">
+
+            </select>
+          </div>
+          <br>
+          <a class="waves-effect waves-light btn blue finish_profil" style="display:none"><%= __('finish')%></a>
+        </div>
+      </div>
+
+<div class="my_choose" secondary="<%= __('secondary')%>" high_school="<%= __('high_school')%>" formation="<%= __('formation')%>" school="<%= __('school')%>" teacher="<%= __('teacher')%>" professional="<%= __('professional')%>" visitors="<%= __('visitors')%>"  students="<%= __('students')%>" user_choose_school="<%= __('user_choose_school')%>"> </div>
+
+
+<% include parts/main_js %>
+<% include parts/choose_profil %>
+<% include parts/footer %>
+

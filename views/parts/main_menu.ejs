@@ -1,0 +1,17 @@
+
+  <%if (admin == true) { %>
+    <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red pulse">
+              <i class="large material-icons">menu</i>
+            </a>
+            <ul>
+              <!-- <li><a class="btn-floating red" href="/contributor"><img src="assets/img/yuna.jpg" alt="" class="circle responsive-img"></a></li> -->
+            
+              <li><a class="btn-floating blue" href="/contributor"><i class="material-icons">person</i></a></li>
+              <!-- <li><a class="btn-floating blue"><i class="material-icons">notifications</i></a></li> -->
+              <li><a class="btn-floating blue" href="http://<%= ip_server %>:9001"><i class="material-icons">create</i></a></li>
+              <li><a class="btn-floating yellow" href="upload"><i class="material-icons">publish</i></a></li>
+              <li><a class="btn-floating red darken-1" href="disconnection"><i class="material-icons">close</i></a></li>
+            </ul>
+    </div>
+  <% } %>
