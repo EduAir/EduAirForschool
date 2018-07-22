@@ -23,37 +23,59 @@ EduAir run on a NodeJs server.
 -	Elasticsearch (https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-14-04)
 -	MongoDb (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 -	A hostpot (http://techapple.net/2014/07/procedure-create-wifi-hotspot-linux-creating-wireless-access-point-linux-ubuntulinuxmintfedoraopensuse/)
--	ImageMagik 
-```sudo apt-get update
-   sudo apt-get install imagemagick ghostscript poppler-utils
+-	ImageMagik
+
+```
+    sudo apt-get update
+    sudo apt-get install imagemagick ghostscript poppler-utils
 ```
 -	LibreOffice
-To convert any type of lite text (Doc,Docx,Excel,ptt,pttx) to PDF.
+To convert any type of lite text (Doc,Docx,Excel,ptt,pttx) to PDF. (Will add ODT and OTT files)
 
-> TODO: add ODT and OTT file.
-``` sudo apt-get install libreoffice --no-install-recommends
+```
+sudo apt-get install libreoffice --no-install-recommends
 ```
 -	Convertor to text
-For PDF File
- ```sudo apt-get install poppler-utils```
 
-- For Pictures:
- ```sudo apt-get install tesseract-ocr
-sudo apt-get install ghostscript
+For PDF File
+
+ ```
+    sudo apt-get install poppler-utils
+ ```
+
+-   For Pictures:
+
+ ```
+    sudo apt-get install tesseract-ocr
+    sudo apt-get install ghostscript
 ```
 -	File preview (thumbnail)
-```sudo apt-get install unoconv```
+
+```
+    sudo apt-get install unoconv
+```
+
 -	Convert PDF file to image
-```sudo apt-get install python-software-properties
+
+```
+sudo apt-get install python-software-properties
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:rwky/graphicsmagick
 sudo apt-get update
 sudo apt-get install graphicsmagick
 ```
-- ```	sudo npm install --unsafe-perm```
+- 
+
+```	
+    sudo npm install --unsafe-perm
+```
 
 Put the clone of this repository in directory of your choice and make a
-```sudo node server.js ``` to launch it
+```
+    sudo node server.js
+``` 
+
+to launch it
 Warning! it listens on the port 80 so make sure this port is free on your server.
 Then type the IP address of your server on your browser to open the application
 To add new files to your server, just add "/upload" in front of your IP address on the browser.
